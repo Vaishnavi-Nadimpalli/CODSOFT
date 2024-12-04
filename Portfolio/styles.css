@@ -86,7 +86,6 @@ body {
 
 .wrapper {
     height: 60vh;
-    /*This part is important for centering*/
     display: grid;
     place-items: center;
 }

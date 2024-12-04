@@ -3,126 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI/ML Enthusiast</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>AI & ML Awareness</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>
-  <!-- Hero Section -->
-  <div class="hero-section">
+  <header class="header">
     <div class="container">
-      <h1 class="hero-title">Empowering AI/ML Enthusiasts</h1>
-      <p class="hero-subtitle">Explore the world of Artificial Intelligence and Machine Learning with passion and creativity. Let's innovate together.</p>
-      <div class="hero-cta">
-        <input type="email" placeholder="Enter your email" class="cta-input">
-        <button class="cta-button">Subscribe</button>
-      </div>
-      <button class="video-button">
-        <span>▶</span> Watch Video Overview
-      </button>
+      <svg viewBox="0 0 960 300">
+        <symbol id="s-text">
+          <text text-anchor="middle" x="50%" y="80%">AI/ML</text>
+          <text text-anchor="middle" x="52%" y="80%">AI/ML</text>
+        </symbol>
+      
+        <g class = "g-ants">
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+          <use xlink:href="#s-text" class="text-copy"></use>
+        </g>
+      </svg>
+      <!-- <a href="#about" class="btn" style="color: white;">Learn More</a> -->
+      <button type="button" class="btn btn-outline-light" onclick="location.href='#about'">Learn More</button>
     </div>
-  </div>
-  
+  </header>
+
+  <nav class="navbar">
+    <button type="button" class="btn" onclick="location.href='#about'">About</button>
+    <button type="button" class="btn" onclick="location.href='#benefits'">Benefits</button>
+    <button type="button" class="btn" onclick="location.href='#applications'">Applications</button>
+    <button type="button" class="btn" onclick="location.href='#future'">Future</button>
+    <button type="button" class="btn" onclick="location.href='#contact'">Contacts</button>
+  </nav>
   
 
   <!-- About Section -->
-  <section id="about" class="about-section py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">About Me</h2>
-      <p class="text-muted">
-        Hi! I'm a dedicated AI/ML enthusiast with hands-on experience in creating predictive models, working with neural networks, and leveraging data science tools to solve real-world problems. I'm proficient in Python, TensorFlow, and Scikit-learn, always eager to learn and contribute.
-      </p>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="skills-section py-5 bg-light">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-5">My Core Skills</h2>
-      <div class="row g-4">
-        <div class="col-lg-4">
-          <div class="skill-card shadow p-4 rounded">
-            <i class="fas fa-chart-line text-primary fs-1 mb-3"></i>
-            <h5>Data Analysis</h5>
-            <p class="text-muted">Extracting insights and trends using Python, Pandas, and Matplotlib.</p>
-          </div>
+  <section id="about" class="about">
+    <div class="container">
+      <h2>What is AI & ML?</h2>
+      <div class="columns">
+        <div>
+          <p style="color: gray;">You might hear people use artificial intelligence (AI) and machine learning (ML) interchangeably, especially when discussing big data, predictive analytics, and other digital transformation topics. The confusion is understandable as artificial intelligence and machine learning are closely related. However, these trending technologies differ in several ways, including scope, applications, and more.<br><br>Artificial intelligence is a broad field, which refers to the use of technologies to build machines and computers that have the ability to mimic cognitive functions associated with human intelligence, such as being able to see, understand, and respond to spoken or written language, analyze data, make recommendations, and more. <br><br>Machine learning is a subset of artificial intelligence that automatically enables a machine or system to learn and improve from experience. Instead of explicit programming, machine learning uses algorithms to analyze large amounts of data, learn from the insights, and then make informed decisions. </p>
         </div>
-        <div class="col-lg-4">
-          <div class="skill-card shadow p-4 rounded">
-            <i class="fas fa-brain text-danger fs-1 mb-3"></i>
-            <h5>Machine Learning</h5>
-            <p class="text-muted">Building models to predict, classify, and cluster data with Scikit-learn.</p>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="skill-card shadow p-4 rounded">
-            <i class="fas fa-robot text-success fs-1 mb-3"></i>
-            <h5>Deep Learning</h5>
-            <p class="text-muted">Designing and training neural networks using TensorFlow and Keras.</p>
-          </div>
+        <div>
+          <img src="aiml.jpg" alt="AI & ML illustration">
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects-section py-5">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-5">Highlighted Projects</h2>
-      <div class="row g-4">
-        <div class="col-md-4">
-          <div class="card project-card shadow border-0">
-            <img src="project1.jpg" class="card-img-top rounded" alt="Project 1">
-            <div class="card-body">
-              <h5 class="card-title">Image Classification</h5>
-              <p class="text-muted">Developed a convolutional neural network to classify images with 95% accuracy.</p>
-            </div>
-          </div>
+  <!-- Benefits Section -->
+  <section id="benefits" class="benefits">
+    <div class="container">
+      <h2>Why Learn AI/ML?</h2>
+      <div class="columns">
+        <div class="card">
+          <h3>High Demand</h3>
+          <p>AI and ML professionals are highly sought after in various industries like healthcare, finance, and technology.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card project-card shadow border-0">
-            <img src="project2.jpg" class="card-img-top rounded" alt="Project 2">
-            <div class="card-body">
-              <h5 class="card-title">Sentiment Analysis</h5>
-              <p class="text-muted">Built an NLP pipeline to analyze sentiment in text datasets with Python and NLTK.</p>
-            </div>
-          </div>
+        <div class="card">
+          <h3>Lucrative Careers</h3>
+          <p>Jobs in AI and ML often come with attractive salary packages and perks.</p>
         </div>
-        <div class="col-md-4">
-          <div class="card project-card shadow border-0">
-            <img src="project3.jpg" class="card-img-top rounded" alt="Project 3">
-            <div class="card-body">
-              <h5 class="card-title">Sales Prediction</h5>
-              <p class="text-muted">Predicted sales using regression models, achieving RMSE of 2.4.</p>
-            </div>
-          </div>
+        <div class="card">
+          <h3>Endless Possibilities</h3>
+          <p>AI and ML have applications in diverse areas, from autonomous vehicles to personalized recommendations.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- Applications Section -->
+  <section id="applications" class="applications">
+    <div class="container">
+      <h2>Applications of AI/ML</h2>
+      <div class="columns">
+        <div class="card">
+          <h3>Healthcare</h3>
+          <p>AI/ML aids in disease prediction, medical imaging analysis, and personalized medicine.</p>
+        </div>
+        <div class="card">
+          <h3>Finance</h3>
+          <p>Fraud detection, stock market prediction, and personalized banking services use AI/ML.</p>
+        </div>
+        <div class="card">
+          <h3>Entertainment</h3>
+          <p>Streaming platforms like Netflix and Spotify use AI/ML for personalized recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Section -->
+  <section id="future" class="future">
+    <div class="container">
+      <h2>The Future of AI/ML</h2>
+      <p style="color: gray;">Artificial Intelligence and Machine Learning are expected to revolutionize industries further, with advancements in Natural Language Processing, Robotics, and Autonomous Systems. The future of AI/ML is bright, offering opportunities for innovation and problem-solving across the globe.Innovations in the field of artificial intelligence continue to shape the future of humanity across nearly every industry. AI is already the main driver of emerging technologies like big data, robotics and IoT, and generative AI has further expanded the possibilities and popularity of AI. 
+
+        <br><br>According to a 2023 IBM survey, 42 percent of enterprise-scale businesses integrated AI into their operations, and 40 percent are considering AI for their organizations. In addition, 38 percent of organizations have implemented generative AI into their workflows while 42 percent are considering doing so.
+        
+        With so many changes coming at such a rapid pace, here’s what shifts in AI could mean for various industries and society at large.
+        
+        
+        </p>
     </div>
   </section>
 
   <!-- Contact Section -->
-  <section id="contact" class="contact-section py-5 bg-dark text-white">
-    <div class="container text-center">
-      <h2 class="fw-bold mb-4">Get In Touch</h2>
-      <p class="text-muted">I'd love to collaborate or discuss anything AI/ML-related!</p>
-      <form class="mt-4">
-        <div class="row justify-content-center">
-          <div class="col-md-6">
-            <input type="text" class="form-control mb-3" placeholder="Your Name">
-            <input type="email" class="form-control mb-3" placeholder="Your Email">
-            <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
-            <button type="submit" class="btn btn-primary w-100">Send Message</button>
-          </div>
-        </div>
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="btn">Submit</button>
       </form>
     </div>
   </section>
 
-  <footer class="footer py-3 text-center text-muted">
-    <p>&copy; 2024 AI/ML Enthusiast. Designed with ❤️.</p>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 AI & ML Awareness. All Rights Reserved.</p>
+    </div>
   </footer>
 </body>
 </html>
