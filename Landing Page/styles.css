@@ -1,12 +1,17 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
+img{
+  border-radius: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 html, body{
   height: 100%;
   font-weight: 800;
 }
 
 body{
-  background: yellow;
+  background: white;
   font-family: Arial;
 }
 
@@ -81,23 +86,23 @@ body {
 
 .btn {
   display: inline-block;
-  background: transparent; /* Transparent background */
-  padding: 10px 15px; /* Padding inside buttons */
-  margin: 0; /* No space between buttons */
-  color: white; /* Text color */
-  font-size: 16px; /* Font size for buttons */
-  text-decoration: none; /* Remove underline */
-  border: none; /* Remove border */
-  cursor: pointer; /* Pointer cursor on hover */
+  background: transparent;
+  padding: 10px 15px;
+  margin: 0;
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
 }
 
 .btn:hover {
-  background: rgba(255, 255, 255, 0.2); /* Slight hover effect */
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .header {
   position: relative;
-  background: url('bg1.jpg') no-repeat center center/cover;
+  background: url('assets/bg1.jpg') no-repeat center center/cover;
   color: white;
   text-align: center;
   padding: 100px 20px;
@@ -132,10 +137,10 @@ body {
 
 .navbar {
   display: flex;
-  justify-content: center; /* Center-align the buttons */
-  align-items: center; /* Vertically align the buttons */
-  background: #198097; /* Navbar background color */
-  padding: 10px 0; /* Adjust vertical padding */
+  justify-content: center;
+  align-items: center;
+  background: #198097;
+  padding: 10px 0;
 }
 
 section {
@@ -152,7 +157,7 @@ section {
 }
 
 .card {
-  background: #f4f4f4;
+  background-color: #06242b;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -161,11 +166,11 @@ section {
 
 .card h3 {
   margin-bottom: 10px;
-  color: #333;
+  color: rgb(255, 214, 138);
 }
 
 .card p {
-  color: #555;
+  color: #d5d5d5;
 }
 
 .footer {
@@ -173,4 +178,14 @@ section {
   color: white;
   text-align: center;
   padding: 20px 0;
+}
+
+.card-color {
+  background: linear-gradient(145deg, #0e58a2, #07cfcf);
+  color: #333;
+}
+
+.card-1:hover, .card-2:hover, .card-3:hover {
+  transform: translateY(-10px);
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3), -10px -10px 20px rgba(255, 255, 255, 0.8);
 }

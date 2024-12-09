@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  .containerpht{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.5)
+  }
+  
+  .image {
+    perspective: 3000px;
+    height: fit-content;
+    position: relative; 
+    margin-left: 200px;
+    width: fit-content;
+    margin-top: 40px;
+  }
+  
+  .image img {
+    max-width: 100%;
+    transform: rotateX(70deg) rotateZ(-60deg) translate3d(-120px, 0px, 70px);
+    box-shadow: -80px 60px 15px 5px rgba(0, 0, 0, 0.4);
+    transition: all 0.6s ease;
+    transform-style: preserve-3d;
+    height: 550px;
+
+  }
+  
+  .image:hover img {
+    transform: rotateX(0deg) rotateZ(0deg) translate3d(0px, 0px, 0px);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+  }
+  
+  .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .text-overlay h1 {
+    font-size: 3rem;
+    color: white;
+    margin: 0;
+  }
+  
+  .text-overlay h5 {
+    margin-top: 1rem;
+    width: 400px;
+    text-align: left;
+    margin-left: 30px;
+    color: rgb(195, 195, 195);
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .image .text-overlay {
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    transform: translate(-50%, -40%);
+    color: rgb(190, 190, 190);
+    font-size: 24px;
+    text-align: left;
+    pointer-events: none; 
+    width: 120%;
+    margin-left: 30px;
+  }
+
+  .container2 h1 {
+    color: #ffffff;
+    font-family: monospace;
+    font-size: 3rem;
+    font-weight: 100;
+    line-height: 1.5;
+    text-transform: uppercase;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    width: 550px;
+    margin-left: 80px;
+  }
+  
+  h1 span {
+    font-size: 45px;
+    margin-left: 110px;
+  }
+  
+  .message {
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    display: block;
+    font-weight: 900;
+    overflow: hidden;
+    position: absolute;
+    padding-left: 0.5rem;
+    top: 0.2rem;
+    left: 270px;
+    animation: openclose 5s ease-in-out infinite;
+  }
+  
+  .word1, .word2, .word3 {
+    font-family: monospace;
+    font-size: 45px;
+  }
+  
+  @keyframes openclose {
+    0% {
+      top: 0.2rem;
+      width: 0;
+    }
+    5% {
+      width: 0;
+    }
+    15% {
+      width: 230px;
+    }
+    30% {
+      top: 0.2rem;
+      width: 230px;
+    }
+    33% {
+      top: 0.2rem;
+      width: 0;
+    }
+    35% {
+      top: 0.2rem;
+      width: 0;
+    }
+    38% {
+      top: -4.5rem;
+    }
+    48% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    62% {
+      top: -4.5rem;
+      width: 190px;
+    }
+    66% {
+      top: -4.5rem;
+      width: 0;
+      text-indent: 0;
+    }
+    71% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    86% {
+      top: -9rem;
+      width: 285px;
+    }
+    95% {
+      top: -9rem;
+      width: 285px;
+    }
+    98% {
+      top: -9rem;
+      width: 0;
+      text-indent: 5px;
+    }
+    100% {
+      top: 0;
+      width: 0;
+      text-indent: 0;
+    }
+  }
+  
